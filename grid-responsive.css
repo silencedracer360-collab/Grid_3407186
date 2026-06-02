@@ -1,0 +1,63 @@
+@import url("https://use.typekit.net/key7fub.css");
+
+/* reseteo de estilos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "dejavu-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.grid-container{
+    /* display: grid; */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.gallery_title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 50px;
+}
+.gallery_title::after{
+    content: "";
+    display: block;
+    height: 30px;
+    background-color: crimson;
+    width: 200px;
+    margin-top: 20px;
+}
+.gallery_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+}
+.gallery_item{
+    width: 200px;
+    height: 150px;
+}
+
+.gallery_img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.card{
+    display: grid;
+    border: 1px solid black;
+    border-radius: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 202px;
+    height: 250px;
+    object-fit: cover;
+    text-align: center;
+    background-color: cadetblue;
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.6);
+}
